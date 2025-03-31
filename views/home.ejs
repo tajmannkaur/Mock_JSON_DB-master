@@ -50,4 +50,21 @@
     </div>
     </body>
 
+    <script>
+        function updateUser(){
+            //Grab the edit form
+            const editUserForm = document.getElementByID('editUserForm');
+            
+            //Grab the id from the input
+            const id = document.getElementByID('edit_id').value;
+
+            //Insert the id into the action attribute
+            editUserForm.action = "/users/" + id + "/update";
+
+            //Submit the form
+            editUserForm.submit();
+
+        }
+    </script>
+
 </html>
