@@ -1,6 +1,6 @@
 const fs = require('fs');
-const filePath = './database.json';
-const { readData, writeData } = require('./utils/file.js');
+const filePath = '../database.json';
+const { readData, writeData } = require('../utils/file.js');
 
 
 
